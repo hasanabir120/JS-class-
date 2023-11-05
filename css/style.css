@@ -1,0 +1,82 @@
+/* Common Css Start */
+:root{
+    --primary-color:#333;
+    --bg-color:#fff;
+}
+:root.light{
+    --primary-color:#333;
+    --bg-color:#fff;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Common Css End */
+body{
+    background-color: var(--bg-color);
+}
+h1{
+    font-size: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    color: var(-- --primary-color);
+    margin-top: 150px;
+}
+
+
+aside{
+    position:fixed;
+    left:0;
+    top:0;
+    background-color:#333;
+    width:250px;
+    height: 100%;
+    transition: .5s;
+}
+aside.hide{
+   margin-left: -250px;
+    
+}
+aside nav ul li a{
+    font-size: 18px;
+    color: #eee;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid #eee rgba(255,255, 255,.1);
+    transition:.4s;
+
+}
+aside nav ul li a:hover{
+    background-color: #222;
+}
+#menu_toggle_btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:40px;
+    height:40px;
+    background-color: #333;
+    color:#eee;
+    font-size:20px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+
+#menu_toggle_btn{
+    background-color: #222;
+}
+.test{
+    opacity:0; visibility:hidden;transition:.5s;
+}
